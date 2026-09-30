@@ -24,6 +24,7 @@ pipeline {
             stage('Run Tests'){
                 steps{
                     bat 'call npx playwright test tests/dropbox-login.spec.js  --headed --project=chromium'
+                    bat 'call npx playwright test tests/test_2.spec.js  --headed --project=chromium'
                 }
             }
         }
